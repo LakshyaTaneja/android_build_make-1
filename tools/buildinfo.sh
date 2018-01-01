@@ -60,6 +60,6 @@ if [ -n "$BUILD_THUMBPRINT" ] ; then
 fi
 echo "ro.build.characteristics=$TARGET_AAPT_CHARACTERISTICS"
 
-echo "ro.lineage.device=$ELIXIR_DEVICE"
+echo "ro.elixir.device=$ELIXIR_DEVICE"
 
 echo "# end build properties"
