@@ -511,13 +511,12 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
     model = GetBuildProp("ro.product.model", OPTIONS.info_dict)
     build = GetBuildProp("ro.build.date", OPTIONS.info_dict)
 
-    script.Print("------------ELIXIR OS ----------");
     script.Print("**** *    ***** *   * ***** **** ");
     script.Print("*    *      *    * *    *   * * ");
-    script.Print("***  *      *     *     *   *  ");
+    script.Print("***  *      *     *     *   **  ");
     script.Print("*    *      *    * *    *   * * ");
     script.Print("**** **** ***** *   * ***** *  * ");
-    script.Print("----- By LakshyaTaneja---- 8.1.0_r7");
+    script.Print("elixiros.sourceforge.io | Android-8.1.0_r14");
     script.Print(" Compiled: %s "%(build));
     script.Print(" For: %s   "%(model));
     script.Print("----------------------------------------------");
