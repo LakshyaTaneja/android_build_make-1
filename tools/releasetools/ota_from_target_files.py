@@ -510,15 +510,17 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
 
     device = GetBuildProp("ro.product.device", OPTIONS.info_dict)
     build = GetBuildProp("ro.build.date", OPTIONS.info_dict)
+    security_patch = GetBuildProp("ro.build.version.security_patch", OPTIONS.info_dict)
 
     script.Print("**** *    ***** *   * ***** ****   ***** *****  ");
     script.Print("*    *      *    * *    *   * *    *   * *      ");
     script.Print("***  *      *     *     *   **     *   * *****  ");
     script.Print("*    *      *    * *    *   * *    *   *     *  ");
     script.Print("**** **** ***** *   * ***** *  *   ***** *****  ");
-    script.Print("elixiros.sourceforge.io | Android-8.1.0_r14");
+    script.Print("elixiros.sourceforge.io | Android-8.1.0_r18");
     script.Print(" Compiled: %s "%(build));
     script.Print(" For: %s   "%(device));
+    script.Print(" Security patch: %s"%(security_patch));
     script.Print("----------------------------------------------");
   recovery_mount_options = OPTIONS.info_dict.get("recovery_mount_options")
 
