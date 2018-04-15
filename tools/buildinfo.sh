@@ -32,7 +32,7 @@ echo "ro.product.name=$PRODUCT_NAME"
 echo "ro.product.device=$TARGET_DEVICE"
 
 echo "ro.elixir.device=$TARGET_DEVICE"
-echo "ro.elixir.ota.version=elixir-1.0-OFFICIAL-$TARGET_DEVICE-$(date +"%Y%m%d")"
+echo "ro.elixir.ota.version=elixir-1.0-MW-OFFICIAL-$TARGET_DEVICE-$(date +"%Y%m%d")"
 
 # These values are deprecated, use "ro.product.cpu.abilist"
 # instead (see below).
